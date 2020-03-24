@@ -1,6 +1,6 @@
 # serverless-api
 
-This API was made with Serverless framework and Node.js. Since the scope was so small, I felt that making a test suite would be overkill and just decided to test manually.
+This API was made with Serverless framework and Node.js. Since the scope was so small, I felt that setting up a test suite would be overkill and just decided to test manually.
 
 It has 3 endpoints, 2 which are GET and 1 POST.
 
