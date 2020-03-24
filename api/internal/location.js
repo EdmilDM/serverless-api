@@ -28,6 +28,7 @@ module.exports.all = async () => {
 };
 
 module.exports.location = async (event) => {
+
     try{
         let value = await bucketHelper.getFile(event.queryStringParameters.filename);
         var parsedResponse = JSON.parse(value.Body.toString());
@@ -38,5 +39,5 @@ module.exports.location = async (event) => {
     } catch (error) {
         return response.generateResponseObject(error.statusCode, error.message);
     }
+    
 };
-

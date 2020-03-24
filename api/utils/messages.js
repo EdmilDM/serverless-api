@@ -13,7 +13,7 @@ const UPLOAD_ERRORS = {
 const UPLOAD_MESSAGE = {
     'SUCCESS' : 'File uploaded successfully.',
 
-}
+};
 
 module.exports = {
     UPLOAD_ERRORS,

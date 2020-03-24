@@ -40,7 +40,7 @@ const validateIsJSON = (file) => {
     try {
         JSON.parse(file);
       } catch(error) {
-        throw new Error(messages.UPLOAD_ERRORS.INVALID_TYPE)
+        throw new Error(messages.UPLOAD_ERRORS.INVALID_TYPE);
       }
 };
 
@@ -48,7 +48,7 @@ const validateHasRequiredFields = (file) => {
     const parsedFile = JSON.parse(file);
     for(const i in propertyList){
         if(!parsedFile.hasOwnProperty(propertyList[i])){
-            throw new Error(messages.UPLOAD_ERRORS.REQUIRED_ATTRIBUTES)
+            throw new Error(messages.UPLOAD_ERRORS.REQUIRED_ATTRIBUTES);
         }
     }
 };
