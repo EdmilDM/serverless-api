@@ -16,7 +16,39 @@ File upload:
 ![request1](https://user-images.githubusercontent.com/4473041/77372790-4a9a0400-6d45-11ea-9d4d-430124a7b284.PNG)
 Header:
 ![request2](https://user-images.githubusercontent.com/4473041/77372811-5b4a7a00-6d45-11ea-92b0-bd6a4347bde1.PNG)
-
+Valid json files:
+```
+{
+  "latitude": 51.507351,
+  "longitude": -0.127758
+}
+```
+```
+{
+  "latitude": 59.507331,
+  "longitude": 10.222355,
+  "name": "ontario"
+}
+```
+Invalid json files:
+```
+{
+  "latitude": 51.507351,
+  "name": "london"
+}
+```
+```
+{
+  "latitude": 51.507351,
+  "longitude: -900.000000
+}
+```
+```
+{
+  "latitude": "new york city",
+  "longitude: -900.000000
+}
+```
 
 There are a couple of validations that the file must pass in order to store it in the S3 bucket:
 
